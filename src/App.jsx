@@ -35,6 +35,7 @@ const EMAIL = 'hello@classicicecreamlovers.com'
 ---------------------------------------------------------------- */
 const NAV_LINKS = [
   { label: 'Home', href: '#home' },
+  { label: 'Shop Deals', href: '/shop' },
   { label: 'Flavors', href: '#services' },
   { label: 'Why Us', href: '#pillars' },
   { label: 'Process', href: '#process' },
@@ -97,7 +98,7 @@ function Navbar() {
         <div className="flex items-center justify-between gap-6">
           <a href="#home" className="flex items-center gap-2 group">
             <span className="relative flex h-11 items-center justify-center rounded-2xl bg-white px-1.5 py-1 shadow-sm ring-1 ring-primary/15">
-              <img src="/images/logo.png" alt="Classic Ice Cream Lovers" className="h-9 w-auto object-contain" />
+              <img src="/images/logo.png" alt="Ice Cream Lovers" className="h-9 w-auto object-contain" />
             </span>
           </a>
 
@@ -115,6 +116,10 @@ function Navbar() {
             ))}
           </div>
 
+          <a
+            href="/shop"
+            className="hidden lg:inline-flex items-center gap-1.5 bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold"
+          >Shop Deals <ArrowUpRight className="h-4 w-4" /></a>
           <a
             href={WHATSAPP_LINK}
             target="_blank"
@@ -148,7 +153,7 @@ function Navbar() {
           }`}
         >
           <div className="flex items-center justify-between mb-10">
-            <img src="/images/logo.png" alt="Classic Ice Cream Lovers" className="h-10 w-auto object-contain" />
+            <img src="/images/logo.png" alt="Ice Cream Lovers" className="h-10 w-auto object-contain" />
             <button onClick={() => setOpen(false)} className="p-2 rounded-full bg-divider/40">
               <X className="h-5 w-5" />
             </button>
@@ -228,7 +233,7 @@ function Hero() {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 pt-32 pb-20 min-h-[100dvh] flex flex-col justify-end">
         <p className="hero-meta font-mono text-xs uppercase tracking-[0.25em] text-white/70 mb-6">
-          Classic Ice Cream Lovers · Lusaka, Zambia
+          Ice Cream Lovers · Lusaka, Zambia
         </p>
         <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl font-bold text-white tracking-tighter leading-[0.95] max-w-3xl">
           <span className="hero-line-1 block">Rich, Smooth,</span>
@@ -961,7 +966,7 @@ function Protocol() {
                   <span className="font-mono text-[10px] uppercase tracking-widest text-ink">Step {step.num}</span>
                 </div>
                 <div className="absolute bottom-4 right-4 font-mono text-[10px] uppercase tracking-widest text-ink/50">
-                  {step.num} / Classic Ice Cream Lovers
+                  {step.num} / Ice Cream Lovers
                 </div>
               </div>
             </div>
@@ -1298,7 +1303,7 @@ function Footer() {
           </h2>
           <div className="flex flex-col sm:flex-row sm:items-end justify-between mt-8 gap-6">
             <p className="text-white/50 max-w-md">
-              Classic Ice Cream Lovers — rich, smooth, unforgettable flavors delivered fresh across Lusaka.
+              Ice Cream Lovers — rich, smooth, unforgettable flavors delivered fresh across Lusaka.
             </p>
             <a
               href={WHATSAPP_LINK}
@@ -1315,7 +1320,7 @@ function Footer() {
           <div className="col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <span className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white p-1.5">
-                <img src="/images/logo.png" alt="Classic Ice Cream Lovers" className="h-full w-full object-contain" />
+                <img src="/images/logo.png" alt="Ice Cream Lovers" className="h-full w-full object-contain" />
               </span>
             </div>
             <p className="font-serif italic text-white/70 text-lg max-w-xs">
@@ -1373,7 +1378,7 @@ function Footer() {
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-white/50 text-xs font-mono">
             <Link to="/privacy" className="hover:text-accent transition">Privacy</Link>
             <Link to="/terms" className="hover:text-accent transition">Terms</Link>
-            <span>© 2026 Classic Ice Cream Lovers</span>
+            <span>© 2026 Ice Cream Lovers</span>
           </div>
         </div>
       </div>
